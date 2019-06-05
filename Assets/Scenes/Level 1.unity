@@ -113,37 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &36194666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1266001395258212, guid: 9c30e04ea2a415740bdf08ad494e874d,
-    type: 2}
-  m_PrefabInternal: {fileID: 991737678}
---- !u!54 &36194667
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 36194666}
-  serializedVersion: 2
-  m_Mass: 0.1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &36194668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 36194666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9334494fd14084d83314f9c25a0975, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &300262696
 Prefab:
   m_ObjectHideFlags: 0
@@ -199,52 +168,35 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 11.78
+      value: 3.07
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -22.02
+      value: -31.92
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.18961173
+      value: -0.040351767
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.0009185701
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.011095073
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9817961
+      value: 0.99918556
       objectReference: {fileID: 0}
     - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20978133841202272, guid: 52a3cfb627e19f744b5d83b2897cd3f2,
-        type: 2}
-      propertyPath: field of view
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.148
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674326692619178, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.3240001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52a3cfb627e19f744b5d83b2897cd3f2, type: 2}
@@ -288,11 +240,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 23067188325755690, guid: 9c30e04ea2a415740bdf08ad494e874d,
+    - target: {fileID: 82725568628176530, guid: 9c30e04ea2a415740bdf08ad494e874d,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8d654de65b5de2f4fac04b760207e8f4, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c30e04ea2a415740bdf08ad494e874d, type: 2}
   m_IsPrefabAsset: 0
