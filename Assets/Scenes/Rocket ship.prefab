@@ -121,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1266001395258212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.36, y: 1.09, z: 0}
+  m_LocalPosition: {x: -59.2, y: 9.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4598956883134454}
@@ -497,6 +497,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rcsThrust: 250
   mainThrust: 200
+  mainEngine: {fileID: 8300000, guid: e9f598b21b20b8740b9a50d5ff1a3687, type: 3}
+  success: {fileID: 8300000, guid: c86c9c1a82546d04ab87d7eeb8043af6, type: 3}
+  death: {fileID: 8300000, guid: 1a9b90a2379833e43a972bf524cdd9c6, type: 3}
 --- !u!135 &135347111790615824
 SphereCollider:
   m_ObjectHideFlags: 1
