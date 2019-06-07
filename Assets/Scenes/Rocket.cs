@@ -13,7 +13,7 @@ public class Rocket : MonoBehaviour {
     [SerializeField] ParticleSystem mainEngineParticle;
     [SerializeField] ParticleSystem successParticle;
     [SerializeField] ParticleSystem deathParticle;
-
+    bool colisionEnable = true;
     Rigidbody rigidbody;
     AudioSource audioSource;
     enum State{Alive,Dying,Transcending }
@@ -32,8 +32,25 @@ public class Rocket : MonoBehaviour {
             RespondToThrustInput();
             RespondToRotateInput();
         }
+        if (Debug.isDebugBuild)
+        {
+            RespodToDebugKeys();
+        }
         
 	}
+
+    private void RespodToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+            {
+            LoadNesxtScene();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            colisionEnable = !colisionEnable;
+        }
+
+    }
     private void RespondToRotateInput()
     {
  
@@ -79,7 +96,7 @@ public class Rocket : MonoBehaviour {
 
      void OnCollisionEnter(Collision collision) {
 
-        if (state != State.Alive)
+        if (state != State.Alive || !colisionEnable)
         {
             return;
         }
@@ -108,8 +125,15 @@ public class Rocket : MonoBehaviour {
     }
 
    private  void LoadNesxtScene()
+
     {
-        SceneManager.LoadScene(1);
+        int currentScene=SceneManager.GetActiveScene().buildIndex;
+        int nextScene = currentScene+1;
+        if(currentScene== SceneManager.sceneCountInBuildSettings)
+        {
+            nextScene = 0;
+        }
+        SceneManager.LoadScene(nextScene);
 
     }
     private void LoadFirstLevel()
